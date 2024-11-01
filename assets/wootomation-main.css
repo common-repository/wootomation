@@ -1,0 +1,157 @@
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.row {
+	box-sizing: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+	box-sizing: inherit;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-md-8 {
+	flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.hide {
+	display: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #9c5d90;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9c5d90;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.loading-bar {
+	background-color: white;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+}
+
+.loading-bar.message {
+	z-index: 2;
+}
+
+.loading-bar .overlay {
+	content: '';
+	display: block;
+	background-color: rgba(156, 93, 144, 0.7);
+    width: 1%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transition: width 0.5s;
+}
+
+div.woocommerce-message {
+	overflow: hidden;
+	position: relative;
+	border-left-color: #cc99c2!important;
+}
+
+.woocommerce-message a.woocommerce-message-close,
+p.woocommerce-actions a.woocommerce-message-close {
+	position: static;
+	float: right;
+	top: 0;
+	right: 0;
+	padding: 0 15px 10px 28px;
+	margin-top: -10px;
+	font-size: 13px;
+	line-height: 1.23076923;
+	text-decoration: none;
+}
+
+.woocommerce-message a.woocommerce-message-close::before, p.woocommerce-actions a.woocommerce-message-close::before {
+	position: relative;
+	top: 18px;
+	left: -20px;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+.wootomation__sidebar {
+	background: white;
+	margin-top: 1em;
+	padding: 1em 2em;
+}
